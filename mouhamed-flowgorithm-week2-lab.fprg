@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value="mouhamed-flowgorithm-week2-lab"/>
+        <attribute name="authors" value="mdiallo58"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-20 04:09:22 PM"/>
+        <attribute name="created" value="bWRpYWxsbzU4O0NJVERCLTEwOzIwMjYtMDktMTE7MTE6MzU6MzMgUE07MjYyOA=="/>
+        <attribute name="edited" value="bWRpYWxsbzU4O0NJVERCLTEwOzIwMjYtMDktMTI7MTI6MTQ6MTcgQU07MTsyNzIy"/>
+        <attribute name="edited" value="bWhkZGk7REVTS1RPUC1CN0c2ODRIOzIwMjYtMDktMjA7MDQ6MDk6MjIgUE07MTsyOTE3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="planet" type="String" array="False" size=""/>
+            <declare name="distance" type="Real" array="False" size=""/>
+            <declare name="pyears" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter name of the planet&quot;" newline="True"/>
+            <comment text="get the planet name from the user"/>
+            <input variable="planet"/>
+            <comment text="Ask for distance from the sun"/>
+            <output expression="&quot;Enter the distance of the planet from the sun in AU:&quot;" newline="True"/>
+            <input variable="Distance"/>
+            <comment text="calculate the number of eart years "/>
+            <assign variable="pyears" expression="Sqrt(distance^3)"/>
+            <output expression="&quot;A year on &quot; &amp; planet &amp; &quot; is: &quot; &amp; pyears &amp; &quot; Earth years. &quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
